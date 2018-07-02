@@ -1,0 +1,121 @@
+/* BASIC */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+/* GRID SETUP */
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include md-up {
+        width: 95%;
+    }
+    @include lg-up { 
+        max-width: $max-width-lg;
+        width: 75%;
+    }
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: block;
+    @include md-up {
+        display: flex;
+    }
+}
+
+.row [class^="col"] {
+    float: left;
+    margin: 0.5em $hmarg;
+    min-height: 1em;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    @include full-width();
+    @include md-up {width: (1/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-2 {
+    @include full-width();
+    @include md-up {width: (2/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-3 {
+    @include full-width();
+    @include md-up {width: (3/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-4 {
+    @include full-width();
+    @include md-up {width: (4/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-5 {
+    @include full-width();
+    @include md-up {width: (5/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-6 {
+    @include full-width();
+    @include md-up {width: (6/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-7 {
+    @include full-width();
+    @include md-up {width: (7/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-8 {
+    @include full-width();
+    @include md-up {width: (8/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-9 {
+    @include full-width();
+    @include md-up {width: (9/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-10 {
+    @include full-width();
+    @include md-up {width: (10/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-11 {
+    @include full-width();
+    @include md-up {width: (11/12 * 100%) - (2 * $hmarg);}
+}
+
+.col-12 {
+    width: (100%) - (2 * $hmarg);
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
