@@ -57,13 +57,13 @@ body {
     display: block;
     @include md-up {
         display: flex;
+        align-items: center;
     }
 }
 
 .row [class^="col"] {
     float: left;
     margin: 0.5em $hmarg;
-    min-height: 1em;
     box-sizing: border-box;
 }
 

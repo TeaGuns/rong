@@ -1,6 +1,14 @@
 /* Variables */
 @import 'variables';
 
-/* Components */
+/* Helpers */
 @import 'helpers/grid';
 @import 'helpers/typography';
+
+/* Components */
+
+@import 'components/buttons';
+
+div {
+    border: 1px solid red;
+}
