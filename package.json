@@ -1,0 +1,23 @@
+{
+  "name": "rong",
+  "version": "0.0.1",
+  "description": "A simple, lightweight SCSS framework",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeaGuns/rong.git"
+  },
+  "author": "TeaGuns",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/TeaGuns/rong/issues"
+  },
+  "homepage": "https://github.com/TeaGuns/rong#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
