@@ -12,6 +12,11 @@
 
 /* BASIC */
 
+* {
+    margin:0;
+    padding:0;
+ }
+
 html,
 body {
   height: 100%;
@@ -58,6 +63,7 @@ body {
     @include md-up {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 }
 

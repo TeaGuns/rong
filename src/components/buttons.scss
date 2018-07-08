@@ -1,5 +1,6 @@
 .btn {
     background-color: $brand-primary;
+    box-sizing: border-box;
     border: none;
     color: $white;
     padding: 1em 2em;
@@ -7,14 +8,80 @@
     text-decoration: none;
     display: inline-block;
     margin: 1em;
+    border-radius: $btn-radius;
+    border: 1px solid $brand-primary;
     cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    &:hover {
+        background-color: $brand-dark;
+        border: 1px solid $brand-dark;
+    }
+/* Button Sizes */
+    &-large {
+        padding: 1.5em 3em;
+    }
+    &-small {
+        padding: .5em 1em;
+        font-size: 0.75em;
+    }
+/* Button Types */
+    &-outlined {
+        background-color: transparent;
+        color: $brand-primary;
+        &:hover {
+            color: $white;
+        }
+    }
+    &-disabled {
+        cursor: default;
+        background-color: $gray-light;
+        border: 1px solid $gray-light;
+        color: $gray;
+        &:hover {
+            background-color: $gray-light;
+            border: 1px solid $gray-light;
+        }
+    }
+    &-i {
+        padding: 1em;
+    }
+    &-icon {
+        i {
+            padding-right: 0.5em;
+        }
+    }
+    &-text {
+        border: none;
+        background-color: transparent;
+        color: $brand-primary;
+        &:hover {
+            background-color: $gray-light;
+            border: none;
+        }
+    }
+
 }
 
-.btn-large {
-    padding: 1.5em 3em;
+
+/* Button Colors */
+
+.btn-error {
+    background-color: $error;
+    border: 1px solid $error;
+    color: $white;
+    &:hover {
+        background-color: $black;
+        border: 1px solid $black;
+    }
 }
 
-.btn-small {
-    padding: .5em 1em;
-    font-size: 0.75em;
+.btn-secondary {
+    background-color: $secondary;
+    border: 1px solid $secondary;
+    color: $white;
+    &:hover {
+        background-color: $black;
+        border: 1px solid $black;
+    }
 }
