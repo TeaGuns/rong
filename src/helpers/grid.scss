@@ -75,61 +75,69 @@ body {
 
 .col-1 {
     @include full-width();
-    @include md-up {width: (1/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (1/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-2 {
     @include full-width();
-    @include md-up {width: (2/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (2/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-3 {
     @include full-width();
-    @include md-up {width: (3/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (3/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-4 {
     @include full-width();
-    @include md-up {width: (4/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (4/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-5 {
     @include full-width();
-    @include md-up {width: (5/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (5/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-6 {
     @include full-width();
-    @include md-up {width: (6/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (6/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-7 {
     @include full-width();
-    @include md-up {width: (7/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (7/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-8 {
     @include full-width();
-    @include md-up {width: (8/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (8/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-9 {
     @include full-width();
-    @include md-up {width: (9/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (9/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-10 {
     @include full-width();
-    @include md-up {width: (10/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (10/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-11 {
     @include full-width();
-    @include md-up {width: (11/12 * 100%) - (2 * $hmarg);}
+    @include md-up {width: (11/$max-col * 100%) - (2 * $hmarg);}
 }
 
 .col-12 {
-    width: (100%) - (2 * $hmarg);
+    width: (12/$max-col * 100%) - (2 * $hmarg);
+}
+
+.col-dyn-content {
+    width: auto;
+}
+
+.col-dyn-fill {
+    flex-grow: 2;
 }
 
 .row::after {

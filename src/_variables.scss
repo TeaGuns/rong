@@ -1,8 +1,15 @@
-/* Variables */
+/* Edit these variables to customize Rong for your use. Or just use the defaults, up to you. */
+
+/* Layout */
 
 $hmarg: 1%;
 $max-width-lg: 70rem;
-$max-col: 12;
+
+$max-col: 12; /* Increasing max columns will require manually adding additional col classes in grid.scss. See Documentation */
+
+
+$body-radius: 0;
+$btn-radius: 0;
 
 
 /* Colors */
@@ -20,4 +27,9 @@ $gray: #808086;
 $error: #FF6B6B;
 
 
-$btn-radius: 0;
+
+/* Typography */
+
+$basefont: 'Montserrat', sans-serif;
+$pfont: 'Open Sans', sans-serif;
+$dropdown-icon: " \25BE"; /* Replace with different Unicode to change icon */

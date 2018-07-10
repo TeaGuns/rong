@@ -1,6 +1,11 @@
+@charset "UTF-8";
 /* Variables */
-/* Variables */
+/* Edit these variables to customize Rong for your use. Or just use the defaults, up to you. */
+/* Layout */
+/* Increasing max columns will require manually adding additional col classes in grid.scss. See Documentation */
 /* Colors */
+/* Typography */
+/* Replace with different Unicode to change icon */
 /* Helpers */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -10,7 +15,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -425,6 +430,12 @@ body {
 .col-12 {
   width: 98%; }
 
+.col-dyn-content {
+  width: auto; }
+
+.col-dyn-fill {
+  flex-grow: 2; }
+
 .row::after {
   content: "";
   display: table;
@@ -433,15 +444,18 @@ body {
 /* TYPOGRAPHY */
 html, body {
   font-size: 16px;
-  font-family: 'Roboto Slab', sans-serif;
-  color: #1B0D37; }
+  font-family: "Montserrat", sans-serif;
+  color: #1B0D37;
+  font-weight: 400; }
 
 h1 {
   font-size: 2.875em;
-  margin: 0; }
+  margin: 0;
+  font-weight: 400; }
 
 h2 {
-  font-size: 2.25em; }
+  font-size: 2.25em;
+  font-weight: 400; }
 
 h3 {
   font-size: 1.75em; }
@@ -457,8 +471,18 @@ h6 {
 
 p {
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6; }
+
+/* Text Styles */
+.underlined {
+  text-decoration: underlined; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.capitalize {
+  text-transform: capitalize; }
 
 /* Components */
 .btn {
@@ -499,6 +523,15 @@ p {
     .btn-disabled:hover {
       background-color: #E2E5EB;
       border: 1px solid #E2E5EB; }
+  .btn-group {
+    margin: 0 1px 0 0;
+    border-radius: 0; }
+    .btn-group-l {
+      margin: 0 1px 0 1em;
+      border-radius: 0 0 0 0; }
+    .btn-group-r {
+      margin: 0 1em 0 0;
+      border-radius: 0 0 0 0; }
   .btn-i {
     padding: 1em; }
   .btn-icon i {
@@ -527,5 +560,54 @@ p {
   .btn-secondary:hover {
     background-color: #1B0D37;
     border: 1px solid #1B0D37; }
+
+.nav {
+  display: flex;
+  justify-content: flex-end; }
+  .nav .icon {
+    display: none; }
+  .nav a:hover, .nav .dropdown:hover .dropbtn {
+    background-color: #2ED0A2;
+    color: white; }
+  .nav a {
+    float: right;
+    display: block;
+    color: #1B0D37;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; }
+  .nav .active {
+    border-bottom: 2px solid #2ED0A2; }
+  .nav .dropdown {
+    float: right;
+    overflow: hidden; }
+    .nav .dropdown button {
+      border: none;
+      outline: none;
+      padding: 1em;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0; }
+      .nav .dropdown button::after {
+        content: " ▾"; }
+    .nav .dropdown:hover .dropdown-content {
+      display: block; }
+    .nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 140px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      .nav .dropdown-content a {
+        float: none;
+        padding: 1em;
+        text-decoration: none;
+        display: block;
+        text-align: left; }
+        .nav .dropdown-content a:hover {
+          background-color: #E2E5EB;
+          color: #1B0D37; }
 
 /*# sourceMappingURL=rong.css.map */

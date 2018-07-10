@@ -43,6 +43,18 @@
             border: 1px solid $gray-light;
         }
     }
+    &-group {
+        margin: 0 1px 0 0;
+        border-radius: 0;
+        &-l {
+            margin: 0 1px 0 1em;
+            border-radius: $btn-radius 0 0 $btn-radius;
+        }
+        &-r {
+            margin: 0 1em 0 0;
+            border-radius: 0 $btn-radius $btn-radius 0;
+        }
+    }
     &-i {
         padding: 1em;
     }

@@ -1,21 +1,24 @@
 /* TYPOGRAPHY */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 html, body {
     font-size: 16px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $basefont;
     color: $black;
+    font-weight: 400;
 }
 
 h1 {
     font-size: 2.875em;
     margin: 0;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 2.25em;
+    font-weight: 400;
 }
 
 h3 {
@@ -36,6 +39,20 @@ h6 {
 
 p {
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $pfont;
     line-height: 1.6;
+}
+
+/* Text Styles */
+
+.underlined {
+    text-decoration: underlined;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
