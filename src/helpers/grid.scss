@@ -132,6 +132,43 @@ body {
     width: (12/$max-col * 100%) - (2 * $hmarg);
 }
 
+.col-1-n {
+    {width: (1/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-2-n {
+    {width: (2/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-3-n {
+    {width: (3/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-4-n {
+    {width: (4/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-5-n {
+    {width: (5/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-6-n {
+    {width: (6/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-7-n {
+    {width: (7/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-8-n {
+    {width: (8/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-9-n {
+    {width: (9/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-10-n {
+    {width: (10/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-11-n {
+    {width: (11/$max-col * 100%) - (2 * $hmarg);}
+}
+.col-12-n {
+    {width: (12/$max-col * 100%) - (2 * $hmarg);}
+}
+
 .col-dyn-content {
     width: auto;
 }
